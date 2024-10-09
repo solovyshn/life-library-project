@@ -1,0 +1,1006 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2E7D1; 
+}
+  
+.signup-header {
+    background-color: #662E29;
+    color: #F2E7D1;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 80px; 
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+  
+
+.header-title {
+    font-family: 'Roboto Slab';
+    display: flex;
+    gap: 10px; 
+}
+
+.light-font {
+    font-weight: 300; 
+}
+
+.semibold-font {
+    font-weight: 600; 
+}
+
+.create-account-box {
+    border: 10px solid #614D42;
+    background-color: #F2E7D1;
+    width: 66%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.create-account-title {
+    color: #614D42;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: left;
+}
+
+.field-label {
+    color: #614D42;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Align field labels to the left */
+    margin-left: 10px;
+}
+
+.form-control {
+    border: 3px solid rgba(97, 77, 66, 0.75); /* Field stroke with 75% opacity */
+    background-color: #D9D7BF;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; 
+    border-radius: 30px;
+    color: rgba(97, 77, 66); 
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size:15px;
+}
+
+.form-control::placeholder, select#city option, input[type="date"]::placeholder {
+    color: rgba(97, 77, 66, 0.6); 
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size:15px;
+}
+
+.create-submit-button {
+    width: 50%;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: #614D42;
+    color: #D9D7BF;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 500;    
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+.create-submit-button:hover {
+    background-color: #401D18; /* Change color on hover if needed */
+}
+
+.sign-in-link {
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    color: #614D42;
+}
+  
+.sign-in-text {
+    font-weight: 500;
+}
+  
+.sign-in-text:hover {
+    color: #401D18; /* Change color on hover if needed */
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #614D42; /* Color of the separator line */
+    margin: 10px 200px; /* Adjust margin as needed */
+}
+  
+.copyright-text {
+    margin-top: 10px; 
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    color: #614D42;
+    font-weight: 400;
+}
+
+.error-message {
+    color: red; /* Text color for error messages */
+    font-size: 0.9rem; /* Font size of error messages */
+    margin-top: 5px; /* Spacing above the error message */
+}
+
+.signin-box {
+    border: 10px solid #614D42;
+    background-color: #F2E7D1;
+    width: 33%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.signform-fields {
+    gap: 15px;
+    text-align: left;
+}
+
+.signform-group {
+    margin-top: 10px;
+}
+
+.signin-submit-button {
+    width: 100%;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: #614D42;
+    color: #D9D7BF;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 500;    
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+.signin-submit-button:hover {
+    background-color: #401D18; /* Change color on hover if needed */
+}
+
+.signup-link-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #D9D7BF;
+    color: #614D42;
+    border: 3px solid #614D42;
+    border-radius: 30px;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 500;    
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.signup-link-button:hover {
+    background-color: #BEBDA6; /* Change color on hover if needed */
+}
+
+.separator-signin {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #614D42; /* Color of the separator line */
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.sign-up-link{
+    display: flex;
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #614D42;
+}
+
+.bold-er{
+    font-weight: 500;
+}
+
+.bold-more{
+    font-weight: 600;
+}
+
+
+
+/* Styles for the header left section */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the header right section */
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+/* Styles for header buttons (Home and Shelves) */
+.header-button {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #F2E7D1;
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: rgba(242, 231, 209, 0.4);
+    height: 100%;
+}
+
+/* Styles for button icons */
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    filter: invert(96%) sepia(10%) saturate(595%) hue-rotate(334deg) brightness(100%) contrast(91%);
+    margin-bottom: 14px;
+}
+
+/* Styles for checkbox label */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    color: #614D42;
+
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 5px; /* Adjust spacing between checkbox and label text */
+}
+
+.checkbox-label:hover {
+    text-decoration: underline; /* Add underline effect on hover */
+}
+
+.search-container {
+    margin-left: 130px;
+    background-color: transparent;
+}
+
+.search-input {
+    background-color: transparent;
+    border-width: 0;
+    width: 200px;
+    color: #F2E7D1;
+    font-family: 'Roboto Serif', serif;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: #F2E7D1;
+    text-decoration: underline;
+}
+
+.search-icon {
+    height: 30px;
+    margin-bottom: -7px;
+    filter: invert(96%) sepia(10%) saturate(595%) hue-rotate(334deg) brightness(100%) contrast(91%);
+    cursor: pointer;
+}
+
+.shelves-icon {
+    height: 40px;
+    filter: invert(96%) sepia(10%) saturate(595%) hue-rotate(334deg) brightness(100%) contrast(91%);
+    fill: transparent;
+    margin-top: 10px;
+}
+
+.log-out-icon {
+    height: 40px;
+    filter: invert(96%) sepia(10%) saturate(595%) hue-rotate(334deg) brightness(100%) contrast(91%);
+    fill: transparent;
+    margin-top: 10px;
+}
+
+.button-title {
+    color: #F2E7D1;
+    font-family: 'Roboto Serif', serif;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.account-info {
+    align-items: center;
+    display:flex;
+    margin-top: 30px;
+    display: table-column;
+    overflow:hidden;
+}
+
+.nameage-info {
+    margin-left: 35%;
+    text-align:left;
+    font-family: 'Roboto Serif', serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nameage-info > .separator {
+    margin: 0px;
+    margin-right: 100px;
+    width: auto;
+}
+
+.account-details {
+    text-align: left;
+}
+
+.accountPhoto {
+    height: 200px;
+    margin-left: 250px;
+    float:left;
+
+}
+
+.text-details {
+    text-align: left;
+    float:hidden;
+    margin-top: 30px;
+    margin-left:530px;
+}
+
+.info-row {
+    margin-bottom: 20px;
+}
+
+.info-type {
+    display: inline-block;
+    width: 150px;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    font-weight: 700;
+    color: #662E29;
+}
+
+.info-value {
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    font-weight: 400;
+    color: #614D42;
+}
+
+.account-buttons{
+    margin-top: 50px;
+}
+
+.edit-button {
+    margin-right: 60px;
+    width: 250px;
+    border-radius: 30px;
+    height: 40px;
+    border-width: 3px;
+    background-color: #D9D7BF;
+    border-color: rgba(97, 77, 66, 0.75);
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #614D42;
+    cursor: pointer;
+}
+
+.delete-button {
+    width: 250px;
+    border-radius: 30px;
+    border-width: 3px;
+    height: 40px;
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #614D42;
+    color: #D9D7BF;
+    cursor: pointer;
+}
+
+.book-collection {
+    margin-top: 30px;
+}
+
+.book-collection-title > h1 {
+    margin-left: 200px;
+}
+
+.book-collection-title > .separator {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.book-collection-title {
+    text-align: left;
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    font-weight: 700;
+    color: #662E29;
+}
+
+.book-container {
+    text-align: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(97, 77, 66, 0.75);
+    background-color: #D9D7BF;
+    width: 25%;
+    height: 170px;
+    padding: 10px;    
+    display: flex;
+    flex-direction:row;
+}
+
+.book-cover {
+    height: 150px;
+    margin: auto 20px;
+}
+
+.book-details {
+    margin-top: 1px;
+    margin-bottom: auto;
+}
+
+.book-details > .title {
+    font-family: 'Roboto Flex';
+    font-size: 16px;
+    font-weight: 700;
+    color: #614D42;
+    cursor: pointer;
+}
+
+.book-details > .author {
+    font-family: 'Roboto Flex';
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(102, 46, 41, 0.6);
+    font-style: italic;
+}
+
+.started-date > .started {
+    color: #662E29;
+    font-weight: 700;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.started-date > .date {
+    color: #614D42;
+    font-weight: 300;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+}
+
+.shelves-container {
+    flex-direction: row;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.shelf-container {
+    text-align: left;
+    border-radius: 25px;
+    border: 3px solid rgba(97, 77, 66, 0.75);
+    background-color: #D9D7BF;
+    width: 18%;
+    height: 100px;
+    padding: 10px;    
+    display: flex;
+    flex-direction:row;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.arrow-button {
+    height: 50px;
+    margin-top:40px;
+    margin-right: 10px;
+    filter: invert(47%) sepia(2%) saturate(2704%) hue-rotate(57deg) brightness(98%) contrast(95%);
+    cursor: pointer;
+}
+
+.shelf-container > .book-cover {
+    height: 90px;
+}
+
+.shelf-container > .shelf-name {
+    color: #614D42;
+    font-family: 'Roboto Serif', serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: auto 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.shelves-title {
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 800;    
+    color: #614D42;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 30px;
+    background-color: rgba(217, 215, 191, 0.81);
+    width: 70%;
+    border: 3px solid rgba(97, 77, 66, 0.75);
+
+  }
+  
+  .navigation button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    color: #614D42;
+    height: 50px;
+    width: 15%;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 500;    
+    font-size: 18px;
+  }
+  
+  .navigation .active {
+    background-color: rgba(108, 123, 101, 0.81);
+    color: #F2E7D1;
+    border-radius: 30px;
+    
+  }
+
+  .navigation .add-shelf {
+    background-color: rgba(108, 123, 101, 0.81);
+    color: #F2E7D1;
+    border-radius: 30px;
+    text-decoration: underline;
+  }
+
+  
+.booklist {
+    margin: 0px auto;
+    width: 100%;
+}
+  
+.booklist-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px auto;
+    font-weight: bold;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 17px;
+    color: #662E29;
+    background-color: rgba(108, 123, 101, 0.5);
+}
+  
+.booklist-header span {
+    flex: 1;
+    text-align: center;
+    width: 20%;
+}
+
+.empty-shelf {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700;    
+    font-size: 18px;
+    color: #662E29;
+    margin-top: 40px;
+}
+
+.bookitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: #D9D7BF;
+
+}
+  
+.book-shelf-cover img {
+    height: 100px;
+}
+  
+.book-info {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    margin-left: 20px;
+    height: 100px;
+}
+  
+.book-title-author, .book-genre, .book-date, .book-more-info, .book-username, .book-shelf-cover, .book-owners {
+    flex: 1;
+    text-align: center;
+    width: 20%;
+    margin:auto;    
+}
+  
+.book-title {
+    font-family: 'Roboto Flex';
+    font-size: 16px;
+    font-weight: 700;
+    color: #614D42;
+}
+
+.book-author {
+    font-family: 'Roboto Flex';
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(102, 46, 41, 0.6);
+    margin-top: 10px;
+}
+
+.book-genre, .book-date, .owner-name, .no-owner {
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    color: #614D42
+}
+
+.owner-name {
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.book-more-info-text {
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    color: #614D42;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-right: 20px;
+}
+
+.book-username{
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    color: #614D42;
+    cursor: pointer;
+    text-decoration: underline;
+}
+  
+.book-cover-big {
+    height: 300px;
+    margin: auto;
+}
+
+.book-header{  
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 0;
+    align-items: left;
+
+  }
+
+.book-meta {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.book-text-details {
+    text-align: left;
+    float:hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+}
+
+.book-infos {
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.title-author-info {
+    text-align:left;
+    font-family: 'Roboto Serif', serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5%;
+}
+
+.title-author-info > .separator {
+    margin: 0px;
+    width: auto;
+}
+
+.title-author-info > h2 {
+    font-family: 'Roboto Flex';
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(102, 46, 41, 0.6);
+    font-style: italic;
+}
+
+.custom-dropdown .Dropdown-control {
+    background-color: #6C7B65;
+    color: #F2E7D1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin:auto;
+    justify-content: space-between;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Custom Arrow */
+  .custom-dropdown .Dropdown-control::after {
+    content: '';
+    margin-left: 10px;
+    border: solid #F2E7D1;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+  }
+  
+  /* Custom Dropdown Menu */
+  .custom-dropdown .Dropdown-menu {
+    background-color: #F2E7D1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: solid #662E29;
+    border-radius: 20px;
+  }
+  
+  /* Custom Dropdown Item */
+  .custom-dropdown .Dropdown-option {
+    color: #6C7B65;
+    padding: 12px 16px;
+    border-bottom: solid rgba(102, 46, 41, 0.5);
+    border-radius: 10px;
+  }
+  
+  .custom-dropdown .Dropdown-option:hover {
+    background-color: rgba(108, 123, 101, 0.5);
+  }
+  
+  /* Hide the default arrow */
+  .custom-dropdown .Dropdown-arrow-wrapper {
+    display: none;
+  }
+  
+.book-description {
+    font-family: 'Roboto Flex';
+    font-size: 16px;
+    font-weight: 700;
+    color: #614D42;
+    text-align: justify;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+.recommendations-container {
+    flex-direction: row;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.currently-reading-container {
+    flex-direction: row;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.book-recommendation-container {
+    text-align: left;
+    border-radius: 25px;
+    border: 3px solid rgba(97, 77, 66, 0.75);
+    background-color: #D9D7BF;
+    width: 18%;
+    height: 130px;
+    padding: 10px;    
+    display: flex;
+    flex-direction:row;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.book-recommendation-cover {
+    height: 100px;
+    margin: auto 20px;
+}
+
+.book-recommendation-container > .book-name {
+    color: #614D42;
+    font-family: 'Roboto Serif', serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto ;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.average-rating {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.average-rating-value {
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.rating-count {
+    font-family: 'Roboto Flex';
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.user-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Roboto Serif', serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rating {
+    flex: 1;
+    text-align: center;
+    width: 20%;
+    margin:auto;    
+}
+
+.sort-icon {
+    height: 13px;
+    filter: invert(18%) sepia(9%) saturate(6513%) hue-rotate(329deg) brightness(95%) contrast(82%);
+    cursor: pointer;
+}
+
+.delete-icon {
+    height: 40px;
+    filter: invert(18%) sepia(9%) saturate(6513%) hue-rotate(329deg) brightness(95%) contrast(82%);
+    cursor: pointer;
+}
+.reviews-section {
+    margin-bottom: 100px;
+}
+.reviews-section > .separator {
+    margin: 0px;
+    width: auto;
+}
+
+.reviews-section > h2 {
+    text-align:center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    background-color: transparent;
+    font-family: 'Roboto Serif', serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+.comment-username {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+};
+
+.comment-review {
+    font-size: 14px;
+    color: #555;
+}
+
+.comment-update-date {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+  
+.comment-text {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+
+  }
+  
+.save-comment {
+    width: 250px;
+    border-radius: 30px;
+    height: 40px;
+    border-width: 3px;
+    background-color: #D9D7BF;
+    border-color: rgba(97, 77, 66, 0.75);
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #614D42;
+    cursor: pointer;
+}
+
+.comment-section {
+    padding: 10px;
+    background-color: transparent;
+    margin-bottom: 100px;
+}
